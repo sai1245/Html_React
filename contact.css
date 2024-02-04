@@ -2,10 +2,85 @@ form {
 	margin:16px;
 }
 
+p:empty {
+    width: 100px;
+    height: 100px;
+    color: black;
+    right: 150px;
+} 
+
+p::first-letter{
+    color: brown;
+}
+
+@keyframes example{
+    0% {background-color: brown;
+    margin-top: 30px;}
+    20%{background-color: aliceblue;}
+    40%{background-color: aqua;
+        margin-top: 30px;}
+    60%{background-color: yellowgreen;}
+    80%{background-color: violet;
+        margin-top: 30px;}
+}
+
+.container{
+    width: 480px;
+    top: 30px;
+    left: 30px;
+    margin: 1%;
+    border: 2px solid blue;
+
+    /* animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+
+}
+@media screen and (min-width:1040px) {
+    .parent-container{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+}
+
+@media screen and (min-width:700px) {
+    .parent-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media ()
+
+.container:hover{
+    color: blueviolet;
+}
 label{
 	margin: 8px;
+}
+a:visited {
+    color:green;
 }
 
 input{
 	margin: 8px;
+}
+input[type=text]:focus{
+    width: 200px;
+}
+
+input[type=checked]:checkbox{
+    color: tomato;
+}
+select{
+    width: 100px;
+    height: 35px;
+    padding: auto;
+}
+
+button{
+    width: 350px;
+    padding: auto;
+    height: 30px;
+    margin: 10px;
 }

@@ -21,7 +21,21 @@ h2{
 	background: lightgrey;
 	margin: 16px;
 	padding: 16px;
+
+    h3{
+        color: blueviolet;
+    }
 }
+
+.container > h3{
+
+color: red;
+}
+
+h3+h4{
+    color: rgb(25, 93, 220);
+}
+
 
 .first{
 	background: yellow;
